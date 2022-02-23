@@ -34,6 +34,8 @@ const Navbar = ({ path }) => {
       as="nav"
       bg={useColorModeValue('#afadad40', '#20202380')}
       w="100%"
+      css={{ backdropFilter: 'blur(10px)' }}
+      zIndex={1}
     >
       <Container
         display="flex"
