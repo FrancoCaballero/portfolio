@@ -1,15 +1,16 @@
 import {
   Box,
+  Code,
   Container,
   Flex,
   Heading,
   Image,
   Link,
-  Stack,
-  Text
+  Stack
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Layout from '../components/layouts/article'
+import { tecnologies } from '../data/tecnologies'
 
 const Section = ({ title, children, ...props }) => {
   return (
@@ -17,7 +18,7 @@ const Section = ({ title, children, ...props }) => {
       <Heading as="h2" fontSize={20}>
         {title}
       </Heading>
-      <Text pt={5}>{children}</Text>
+      <Box pt={5}>{children}</Box>
     </Box>
   )
 }
@@ -80,9 +81,12 @@ export default function Home() {
         </Flex>
 
         <Section title="Acerca de mi" mt={{ base: '150px', md: 10 }}>
-          Soy un desarrollador de software con experiencia en back-end y
-          front-end, he trabajo con difentes lenguajes de programación, pero en
-          el que me estoy especializando es en Javascript.
+          <Code colorScheme="blackAlpha">
+            Tengo experiencia en back-end y front-end, he trabajado con
+            diferentes lenguajes de programación, pero en el que me estoy
+            especializando es en Javascript, ya que se pueden realizar
+            applicaciones para multiples plataformas con distintos frameworks.
+          </Code>
         </Section>
         <Section mt={10} title="Tecnologías">
           <Stack
@@ -91,13 +95,9 @@ export default function Home() {
             wrap="wrap"
             gap={5}
           >
-            <Image src="/images/js.png" alt="Javascript" w="50px" />
-            <Image src="/images/node.png" alt="Javascript" w="50px" />
-            <Image src="/images/react.png" alt="Javascript" w="50px" />
-            <Image src="/images/next.png" alt="Javascript" w="50px" />
-            <Image src="/images/angular.png" alt="Javascript" w="50px" />
-            <Image src="/images/java.png" alt="Javascript" w="50px" />
-            <Image src="/images/postgresql.png" alt="Javascript" w="50px" />
+            {tecnologies.map(({ src, alt }) => (
+              <Image key={alt} src={src} alt={alt} w="50px" />
+            ))}
           </Stack>
         </Section>
       </Container>
