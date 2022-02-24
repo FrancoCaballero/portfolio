@@ -57,9 +57,6 @@ const Navbar = ({ path }) => {
           <LinkItem href="/works" path={path}>
             Trabajos
           </LinkItem>
-          <LinkItem href="/about" path={path}>
-            Acerca de
-          </LinkItem>
         </Stack>
       </Container>
     </Box>
