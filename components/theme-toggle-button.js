@@ -16,7 +16,7 @@ const ThemeToggleButton = () => {
         transition={{ duration: 0.2 }}
       >
         <IconButton
-          colorScheme={useColorModeValue('purple', 'orange')}
+          colorScheme={useColorModeValue('blue', 'orange')}
           icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
           onClick={toggleColorMode}
         ></IconButton>
