@@ -6,7 +6,8 @@ import {
   Heading,
   Image,
   Link,
-  Stack
+  Stack,
+  useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Layout from '../components/layouts/article'
@@ -81,11 +82,11 @@ export default function Home() {
         </Flex>
 
         <Section title="Acerca de mi" mt={{ base: '150px', md: 10 }}>
-          <Code colorScheme="blackAlpha">
+          <Code colorScheme={useColorModeValue('blackAlpha', 'linkedin')}>
             Tengo experiencia en back-end y front-end, he trabajado con
             diferentes lenguajes de programación, pero en el que me estoy
-            especializando es en Javascript, ya que se pueden realizar
-            applicaciones para multiples plataformas con distintos frameworks.
+            especializando es en JavaScript, ya que se pueden realizar
+            aplicaciones para multiples plataformas con distintos frameworks.
           </Code>
         </Section>
         <Section mt={10} title="Tecnologías">
