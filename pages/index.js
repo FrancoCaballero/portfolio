@@ -1,5 +1,4 @@
 import {
-  Box,
   Code,
   Container,
   Flex,
@@ -11,18 +10,8 @@ import {
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Layout from '../components/layouts/article'
+import Section from '../components/layouts/section'
 import { tecnologies } from '../data/tecnologies'
-
-const Section = ({ title, children, ...props }) => {
-  return (
-    <Box p={10} boxShadow="xs" {...props}>
-      <Heading as="h2" fontSize={20}>
-        {title}
-      </Heading>
-      <Box pt={5}>{children}</Box>
-    </Box>
-  )
-}
 
 export default function Home() {
   return (
