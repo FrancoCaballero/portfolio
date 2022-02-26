@@ -22,6 +22,10 @@ export const tecnologies = [
     alt: 'React'
   },
   {
+    src: '/images/svelte.png',
+    alt: 'Svelte'
+  },
+  {
     src: '/images/next.png',
     alt: 'Next.js'
   },
