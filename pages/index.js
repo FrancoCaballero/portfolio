@@ -16,7 +16,7 @@ import { tecnologies } from '../data/tecnologies'
 export default function Home() {
   return (
     <Layout>
-      <Container maxW={1000} pt={{ base: 20, md: 10 }}>
+      <Container maxW={1000} pt={{ base: 100, md: 10 }}>
         <Flex
           direction={{
             base: 'column',
@@ -51,7 +51,10 @@ export default function Home() {
               <NextLink href="https://github.com/FrancoCaballero" passHref>
                 <Link color="red" isExternal>
                   <Image
-                    src="/images/github.png"
+                    src={useColorModeValue(
+                      '/images/github.png',
+                      '/images/github-white.png'
+                    )}
                     alt="Github"
                     w="35px"
                     mr={5}
@@ -81,12 +84,14 @@ export default function Home() {
         <Section mt={10} title="Tecnologías">
           <Stack
             direction={{ base: 'column', md: 'row' }}
-            align={{ base: 'center', md: 'flex-start' }}
+            align="center"
             wrap="wrap"
-            gap={5}
+            gap="10px"
           >
             {tecnologies.map(({ src, alt }) => (
-              <Image key={alt} src={src} alt={alt} w="50px" />
+              <Flex key={alt} w="100px" justify="center" align="center">
+                <Image key={alt} src={src} alt={alt} w="50px" />
+              </Flex>
             ))}
           </Stack>
         </Section>
