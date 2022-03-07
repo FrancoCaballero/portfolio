@@ -39,7 +39,7 @@ const Navbar = ({ path }) => {
     <Box
       position="fixed"
       as="nav"
-      bg={useColorModeValue('#afadad40', '#20202380')}
+      bg={useColorModeValue('#afadad40', 'gray.800')}
       w="100%"
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
@@ -61,8 +61,8 @@ const Navbar = ({ path }) => {
           display={{ base: 'none', md: 'flex' }}
           direction={{ base: 'none', md: 'row' }}
         >
-          <LinkItem href="/works" path={path}>
-            Trabajos
+          <LinkItem href="/projects" path={path}>
+            Proyectos
           </LinkItem>
         </Stack>
 
@@ -81,8 +81,8 @@ const Navbar = ({ path }) => {
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>Acerca de</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Trabajos</MenuItem>
+                <NextLink href="/projects" passHref>
+                  <MenuItem as={Link}>Proyectos</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>
