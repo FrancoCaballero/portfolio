@@ -1,9 +1,12 @@
 export const tecnologies = [
   {
+    src: '/images/git.png',
+    alt: 'Git'
+  },
+  {
     src: '/images/html.png',
     alt: 'HTML5'
   },
-
   {
     src: '/images/css.png',
     alt: 'CSS3'
@@ -40,6 +43,10 @@ export const tecnologies = [
   {
     src: '/images/postgresql.png',
     alt: 'PostgreSQL'
+  },
+  {
+    src: '/images/mongodb.png',
+    alt: 'MongoDB'
   },
   {
     src: '/images/chakra.png',
