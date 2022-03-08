@@ -83,7 +83,8 @@ export default function Home() {
             direction={{ base: 'column', md: 'row' }}
             align={{ base: 'center', md: 'flex-start' }}
             wrap="wrap"
-            gap={5}
+            gap="30px"
+            spacing={0}
           >
             {tecnologies.map(({ src, alt }) => (
               <Image key={alt} src={src} alt={alt} w="50px" />
