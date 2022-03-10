@@ -13,7 +13,9 @@ const ProjectItem = ({ children, title, href, src, alt }) => {
           <Flex direction="column" justify="center" align="center">
             <Image src={src} width={200} height={350} alt={alt} />
 
-            <Code mt={3}>{children}</Code>
+            <Code p={5} mt={3}>
+              {children}
+            </Code>
           </Flex>
         </Section>
       </Link>

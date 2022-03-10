@@ -27,7 +27,7 @@ export default function Home() {
           justify="center"
         >
           <Image
-            src="/images/godofwar.png"
+            src="/images/fcaballero.jpg"
             alt="Franco Caballero"
             w={200}
             mr={10}
@@ -74,7 +74,7 @@ export default function Home() {
         </Flex>
 
         <Section title="Acerca de mi" mt={{ base: '150px', md: 10 }}>
-          <Code colorScheme={useColorModeValue('blackAlpha', 'linkedin')}>
+          <Code p={5} colorScheme={useColorModeValue('blackAlpha', 'linkedin')}>
             Tengo experiencia en back-end y front-end, he trabajado con
             diferentes lenguajes de programación, pero en el que me estoy
             especializando es en JavaScript, ya que se pueden realizar
