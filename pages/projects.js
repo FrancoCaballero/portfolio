@@ -29,12 +29,21 @@ const projects = () => {
       <Container maxW={1000} pt={20}>
         <Flex direction="column" align="center" justify="center" gap={10}>
           <ProjectItem
+            title="Buscar Buses"
+            href="https://search-stops.vercel.app/"
+            src="/images/search-stops.png"
+            alt="Aplicación de películas"
+          >
+            Aplicación de busqueda de buses en Santiago de Chile, hecho con React.js y Vite
+          </ProjectItem>
+
+          <ProjectItem
             title="Gif Expert"
             href="https://gif-expert-rosy.vercel.app/"
             src="/images/gif-expert.jpg"
             alt="Aplicación de gifs"
           >
-            Aplicación de busqueda de gifs, hecho con Reacj.js
+            Aplicación de busqueda de gifs, hecho con React.js
           </ProjectItem>
 
           <ProjectItem
@@ -44,7 +53,7 @@ const projects = () => {
             alt="Aplicación de películas"
           >
             Aplicación de busqueda de películas, hecho con Svelte.js
-          </ProjectItem>
+          </ProjectItem>          
         </Flex>
       </Container>
     </Layout>
