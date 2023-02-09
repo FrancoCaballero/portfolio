@@ -32,7 +32,7 @@ const projects = () => {
             title="Buscar Buses"
             href="https://search-stops.vercel.app/"
             src="/images/search-stops.png"
-            alt="Aplicación de películas"
+            alt="Aplicación de Busqueda de buses"
           >
             Aplicación de busqueda de buses en Santiago de Chile, hecho con React.js y Vite
           </ProjectItem>
@@ -53,7 +53,16 @@ const projects = () => {
             alt="Aplicación de películas"
           >
             Aplicación de busqueda de películas, hecho con Svelte.js
-          </ProjectItem>          
+          </ProjectItem>
+
+          <ProjectItem
+            title="Calculadora Vacaciones Proporcionales"
+            href="https://vacation-calculator-isaq.vercel.app/"
+            src="/images/vacations-calculator.png"
+            alt="Calculadora de vacaciones proporcionales"
+          >
+            Aplicación para calcular el monto a pagar de las vacaciones proporcionales en Chile, hecho con React.js
+          </ProjectItem>    
         </Flex>
       </Container>
     </Layout>
